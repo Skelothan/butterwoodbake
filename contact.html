@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Jonathan Fischer">
+	<meta name="keywords">
+	<meta name="description">
+	
+	<title>Butterwood Bake Consortium</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" media="screen and (max-width: 640px)" type="text/css" href="css/stylesmobile.css">
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css">
+	
+	<!-- Javascript -->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+	<script type="text/javascript" src="js/scripts"></script>
+	<script>
+		$(function() {
+			$('#gallery a').lightBox();
+		});
+	</script>
+	
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+	
+</head>
+<body>
+	<header>
+		<a href="index.html"><img id="logo" src="images/logo.png"></a>
+		<nav>
+			<a href="index.html">HOME</a>
+			<a href="orders.html">ORDER ONLINE</a>
+			<a href="about.html">ABOUT</a>
+			<a href="hours.html">HOURS</a>
+			<a href="contact.html" class="active">CONTACT</a>
+		</nav>
+	</header>
+	<div id="content">
+		<div class="row">
+			<div class="col_abc">
+				<div class="mainpagebox">
+					<h1>Contact us!</h1>
+					<form action="mailto:infoneeded@butterwoodBC.com">
+						<div class="formwrapper">
+							<label>Name:<span class="required" title="Required field">*</span></label><br>
+							<input type="text" name="name" required>
+						</div>
+						<div class="formwrapper">
+							<label>ZIP:<span class="required" title="Required field">*</span></label><br>
+							<!-- I get you probably wanted me to validate this with Javascript, but -->
+							<!-- ... this is way easier. -->
+							<input type="number" name="zip" id="zip" min=10000 max=99999 required>
+						</div>
+						<div style="clear: both;">
+						</div>
+						<br>
+						<div>
+							<label>Inquiry:<span class="required" title="Required field">*</span></label><br>
+							<textarea rows=5 cols=30 name="inquiry" required></textarea>
+						</div>
+						<br>
+						<div>
+							<input type="checkbox" name="newsletter" checked><label style="font-size: 8pt;">Yes! Sign me up for the Butterwood Bake Consortium newsletter!</label>
+						</div>
+						<div class="submitbox">
+							<input type="submit" id="submit" value="Submit"><br>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+	<div class="row">
+		<div class="col_c">
+			<div class="footerbox" style="overflow: hidden;">
+				<h3>CONTACT</h3>
+				<p class="footer">
+					412-781-0218<br>
+					<a href="mailto:info@thebutterwood.com">info@thebutterwood.com</a><br>
+					Facebook: <a href="https://www.facebook.com/thebutterwoodbakeconsortium" target="_blank"><img src="images/butterwood_fb.png" alt="@thebutterwoodbakeconsortium" class="socialLogo"></a><br>
+					Instagram: <a href="https://www.instagram.com/thebutterwoodbakeconsortium/" target="_blank"><img src="images/butterwood_ig.png" alt="thebutterwoodbakeconsortium" class="socialLogo"></a>
+				</p>
+			</div>
+		</div>
+		<div class="col_c">
+			<div class="footerbox">
+				<h3>HOURS</h3>
+				<table class="hours">
+					<tbody>
+						<tr><td>Wed–Fri:</td><td>12PM - 11PM</td></tr>
+						<tr><td>Sat:</td><td>10AM - 11PM</td></tr>
+						<tr><td>Sun:</td><td>10AM - 9PM</td></tr>
+						<tr><td colspan=2><a class="hoursLink" href="hours.html">Learn more...</a></td></tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="col_c">
+			<div class="footerbox">
+				<h3>ADDRESS</h3>
+				<p class="footer">
+					Lawrenceville<br>
+					5222 Butler St<br>
+					Pittsburgh, PA 15201<br>
+					&nbsp;
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footerbar">
+		&copy; 2019 Butterwood Bake Consortium. All rights reserved.
+	</div>
+	</footer>
+</body>
+</html>

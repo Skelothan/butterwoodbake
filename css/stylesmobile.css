@@ -1,0 +1,104 @@
+@media screen and (max-width: 640px){
+	
+	body {
+		/* background-color: white; */
+	
+	}
+	
+	#logo {
+		width: 75%;
+	}
+	
+	.row {
+		/* border: 1px solid #f00; */
+		/* background-color: #fff; */
+		width: 100%;
+		margin: auto;
+		clear: both;
+		display: inline-block;
+	}
+
+	/* Convert three-column layout to one-column on mobile */
+	.col_ab {
+		/* border: 1px solid; */
+		background-color: #ffe2cf;
+		width: 94%;
+		height: initial;
+		margin: 1%;
+		float: left;
+		text-align: center;
+		padding-bottom: 0;
+	}
+
+	
+	.lightboxImg {
+		/* border: 1px solid; */
+		width: 94%;
+		padding: 1%;
+		float: left;
+	}
+
+	.col_c {
+		/* border: 1px solid; */
+		width: 94%;
+		margin: 1%;
+		float: left;
+	}
+	
+	.col_abc {
+		width: 94%;
+		margin: 1%;
+	}
+	
+	.col_bc {
+		width: 94%;
+		margin: 1%;
+		float: left;
+	}
+	
+	/* On mobile, make the nav bar thicker to make it easier to tap on. */
+	nav {
+		font-size: 10pt;
+		padding: 1.25em;;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	nav a {
+		color: #ffe2cf;
+		padding: .75em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		text-decoration: none;
+	}
+	
+	/*
+	a.buttonLink {
+		display: none;
+	}
+	
+	.linkButton {
+		display: none;
+	}
+	*/
+	
+	/* The extra map on that page is kinda in the way, so don't show that one */
+	.mapbox2 {
+		display: none;
+	}
+	
+	/* On mobile, make checkboxes bigger so they're easier to tap on. */
+	input.checkbox {
+		width: 2.5em;
+		height: 2.5em;
+	}
+	
+	label {
+		vertical-align: top;
+	}
+	
+	.socialLogo {
+		height: 2em;
+		display: inline;
+	}
+}
